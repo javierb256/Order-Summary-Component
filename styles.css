@@ -67,18 +67,6 @@ body {
   background-color: var(--pale-blue);
 }
 
-.container {
-  max-width: 450px;
-  height: 680px;
-  border-radius: 20px;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: white;
-}
-
 .hero-image {
   width: 100%;
   border-top-left-radius: 20px;
@@ -202,6 +190,18 @@ button.cancel, button.proceed {
     background-size: 100%;
     height: 100%;
   }
+
+  .container {
+    max-width: 450px;
+    height: 680px;
+    border-radius: 20px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+  }
 }
 
 .attribution {
@@ -215,3 +215,64 @@ button.cancel, button.proceed {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+@media screen and (max-width: 768px){
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./images/pattern-background-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100%;
+  }
+
+  .container {
+    max-width: 90%;
+    background-color: white;
+    border-radius: 20px;
+
+  }
+  header {
+    height: 35%;
+  }
+  img {
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 520px){
+main {
+  width: 85%;
+  padding-bottom: 1.5rem;
+}
+
+main p {
+  width: 80%;
+}
+
+main .plan-name-price{
+  flex-grow: 2;
+}
+
+.plan-info img {
+ padding-right: 1.5rem; 
+}
+
+.plan-name-price p:first-child{
+  text-align: start;
+}
+
+.plan-name-price p {
+  text-align: start;
+}
+
+button.proceed {
+  margin-top: .1rem;
+}
+}
+
+/* @media screen and (max-width: 480px){
+  
+} */
