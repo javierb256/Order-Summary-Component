@@ -273,6 +273,56 @@ button.proceed {
 }
 }
 
-/* @media screen and (max-width: 480px){
-  
-} */
+@media screen and (max-width: 480px){
+  header {
+    height: 30%;
+  }
+}
+
+@media screen and (max-width: 370px){
+  main{
+    padding-top: 1rem;
+    padding-bottom: 2.8rem;
+  }
+
+  main h1 {
+    font-size: 1.5rem;
+  }
+
+  .plan-info img {
+    padding-right: 12px;
+  }
+  .plan-name-price p {
+    font-size: .9rem;
+  }
+}
+
+@media screen and (max-width: 325px){
+  header {
+    height: 26%;
+  }
+
+  main h1 {
+    font-size: 1.2rem;
+  }
+
+  main p {
+    font-size: .8rem;
+  }
+
+  .plan-info img {
+    width: 50px;
+  }
+
+  .plan-name-price p {
+    font-size: .8rem;
+  }
+
+  main .plan-info a {
+    font-size: .8rem;
+  }
+
+  .proceed {
+    font-size: .7rem;
+  }
+}
