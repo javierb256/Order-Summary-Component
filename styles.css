@@ -52,13 +52,6 @@ body {
   --dark-blue: hsl(223, 47%, 23%);
 }
 
-/* .red-hat-display-<uniquifier> {
-    font-family: "Red Hat Display", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-  } */
-
 body {
   font-size: 16px;
   font-family: "Red Hat Display", sans-serif;
@@ -107,23 +100,21 @@ main .plan-info {
   font-optical-sizing: auto;
 }
 
-
-
 main .plan-name-price {
-    margin-right: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 4px;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 4px;
 }
 
 .plan-name-price p:first-child {
-    font-weight: 900;
-    color: black;
+  font-weight: 900;
+  color: black;
 }
 
 main.plan-info p {
-    margin-left: auto;
+  margin-left: auto;
 }
 
 .plan-info img {
@@ -168,7 +159,6 @@ button.proceed:hover {
   background-color: hsl(244.3, 88.7%, 72.4%);
 }
 
-
 button.cancel {
   color: hsl(0, 0%, 52%);
   font-weight: 900;
@@ -178,8 +168,9 @@ button.cancel:hover {
   color: black;
 }
 
-button.cancel, button.proceed {
-  margin-top: .8rem;
+button.cancel,
+button.proceed {
+  margin-top: 0.8rem;
 }
 
 @media screen and (min-width: 769px) {
@@ -216,13 +207,13 @@ button.cancel, button.proceed {
   color: hsl(228, 45%, 44%);
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   body {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url('./images/pattern-background-mobile.svg');
+    background-image: url("./images/pattern-background-mobile.svg");
     background-repeat: no-repeat;
     background-size: 100%;
     height: 100%;
@@ -232,7 +223,6 @@ button.cancel, button.proceed {
     max-width: 90%;
     background-color: white;
     border-radius: 20px;
-
   }
   header {
     height: 35%;
@@ -242,45 +232,45 @@ button.cancel, button.proceed {
   }
 }
 
-@media screen and (max-width: 520px){
-main {
-  width: 85%;
-  padding-bottom: 1.5rem;
+@media screen and (max-width: 520px) {
+  main {
+    width: 85%;
+    padding-bottom: 1.5rem;
+  }
+
+  main p {
+    width: 80%;
+  }
+
+  main .plan-name-price {
+    flex-grow: 2;
+  }
+
+  .plan-info img {
+    padding-right: 1.5rem;
+  }
+
+  .plan-name-price p:first-child {
+    text-align: start;
+  }
+
+  .plan-name-price p {
+    text-align: start;
+  }
+
+  button.proceed {
+    margin-top: 0.1rem;
+  }
 }
 
-main p {
-  width: 80%;
-}
-
-main .plan-name-price{
-  flex-grow: 2;
-}
-
-.plan-info img {
- padding-right: 1.5rem; 
-}
-
-.plan-name-price p:first-child{
-  text-align: start;
-}
-
-.plan-name-price p {
-  text-align: start;
-}
-
-button.proceed {
-  margin-top: .1rem;
-}
-}
-
-@media screen and (max-width: 480px){
+@media screen and (max-width: 480px) {
   header {
     height: 30%;
   }
 }
 
-@media screen and (max-width: 370px){
-  main{
+@media screen and (max-width: 370px) {
+  main {
     padding-top: 1rem;
     padding-bottom: 2.8rem;
   }
@@ -293,11 +283,11 @@ button.proceed {
     padding-right: 12px;
   }
   .plan-name-price p {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
 }
 
-@media screen and (max-width: 325px){
+@media screen and (max-width: 325px) {
   header {
     height: 26%;
   }
@@ -307,7 +297,7 @@ button.proceed {
   }
 
   main p {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
   .plan-info img {
@@ -315,14 +305,14 @@ button.proceed {
   }
 
   .plan-name-price p {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
   main .plan-info a {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
   .proceed {
-    font-size: .7rem;
+    font-size: 0.7rem;
   }
 }
